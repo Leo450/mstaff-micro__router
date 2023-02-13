@@ -1,8 +1,8 @@
 version: '3.1'
 
 services:
-  router:
-    container_name: router
+  dev:
+    container_name: mstaff-micro__router
     image: nginx:alpine
     ports:
       - '20000:80'
