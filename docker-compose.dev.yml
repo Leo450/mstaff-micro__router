@@ -1,13 +1,13 @@
 version: '3.1'
 
 services:
-  dev:
-    container_name: mstaff-micro__web-server
+  nginx:
+    container_name: mstaff-micro__web-server__dev__nginx
     image: nginx:alpine
     ports:
       - '20000:80'
     volumes:
-      - './nginx.conf:/etc/nginx/conf.d/default.conf'
+      - './nginx-dev.conf:/etc/nginx/conf.d/default.conf'
     networks:
       - mstaff-micro.network
 
